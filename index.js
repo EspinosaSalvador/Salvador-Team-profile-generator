@@ -17,7 +17,7 @@ const createManager = () => {
         if (nameInput) {
           return true;
         } else {
-          alert.console.log("Please enter the managers name!");
+          console.log("Please enter the managers name!");
           return false;
         }
       },
@@ -26,16 +26,40 @@ const createManager = () => {
       type: "input",
       name: "id",
       message: "Provide us with the team manager's ID?",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter the managers name!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "email",
       message: "Provide us withv the team manager's email address?",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter the managers name!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "officeNumber",
       message: "Provde us with an office number for the Manager",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          console.log("Please enter the managers name!");
+          return false;
+        }
+      },
     },
   ]);
 };
