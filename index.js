@@ -17,7 +17,8 @@ const createManager = () => {
         if (nameInput) {
           return true;
         } else {
-          console.log("Please enter the managers name!");
+          // ! had to do console.log due that alert.console.log was not working as intended and it didn't provide me with a message.
+          console.log("Please enter the team Managers name!");
           return false;
         }
       },
@@ -25,12 +26,13 @@ const createManager = () => {
     {
       type: "input",
       name: "id",
-      message: "Provide us with the team manager's ID?",
+      message: "Provide us with the team Manager's ID?",
+      // ! modify validations to require number and to not skip the question in node
       validate: (nameInput) => {
-        if (nameInput) {
+        if (nameInput.trim() !== "" && !isNaN(nameInput)) {
           return true;
         } else {
-          console.log("Please enter the managers name!");
+          console.log("Please enter a valid number for the team Managers ID!");
           return false;
         }
       },
@@ -38,12 +40,15 @@ const createManager = () => {
     {
       type: "input",
       name: "email",
-      message: "Provide us withv the team manager's email address?",
-      validate: (nameInput) => {
-        if (nameInput) {
+      message: "Provide us withv the team Manager's email address?",
+      // ! added a validation requirement that is looking for @ and . all without spaces.
+      // ! if the user does not input these it will not work and will prompt with a legend stating to add the email.
+      validate: (emailInput) => {
+        const emailPattern = /\S+@\S+\.\S+/;
+        if (emailInput && emailPattern.test(emailInput)) {
           return true;
         } else {
-          console.log("Please enter the managers name!");
+          console.log("Please enter a valid email address!");
           return false;
         }
       },
@@ -51,12 +56,13 @@ const createManager = () => {
     {
       type: "input",
       name: "officeNumber",
-      message: "Provde us with an office number for the Manager",
+      message: "Provide us with an office number for the Manager",
+      // ! modify validations to require number
       validate: (nameInput) => {
-        if (nameInput) {
+        if (nameInput.trim() !== "" && !isNaN(nameInput)) {
           return true;
         } else {
-          console.log("Please enter the managers name!");
+          console.log("Please enter a valid number for the office number!");
           return false;
         }
       },
