@@ -12,23 +12,33 @@ const createManager = () => {
     {
       type: "input",
       name: "name",
-      message: "What is the team member's name?",
+      message: "Provide us with the team manager's name?",
+      validate: (nameInput) => {
+        if (nameInput) {
+          return true;
+        } else {
+          alert.console.log("Please enter the managers name!");
+          return false;
+        }
+      },
     },
     {
       type: "input",
       name: "id",
-      message: "What is the team member's ID?",
+      message: "Provide us with the team manager's ID?",
     },
     {
       type: "input",
       name: "email",
-      message: "What is the team member's email address?",
+      message: "Provide us withv the team manager's email address?",
     },
     {
-      type: "list",
-      name: "role",
-      message: "What is the team member's role?",
-      choices: ["Manager", "Engineer", "Intern"],
+      type: "input",
+      name: "officeNumber",
+      message: "Provde us with an office number for the Manager",
     },
   ]);
 };
+
+// ! we need to call the function of createManager to be able to see it in node index.js if we do not do this nothing will start.
+createManager();
