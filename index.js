@@ -3,6 +3,10 @@
 const fs = require("fs");
 // ! inquirer is a dependency that needs to be installed for this program to work on its basic level.
 const inquirer = require("inquirer");
+const libEmployee = require("./lib/Employee");
+const libManager = require("./lib/Manager");
+// const libManager = require("./lib/Employee");
+// const libManager = require("./lib/Employee");
 
 const teamArray = [];
 
