@@ -137,13 +137,13 @@ const createEngineer = () => {
       {
         type: "input",
         name: "Github",
-        message: "Provide us with a Github username",
-        // ! modify validations to require number
+        message: "Provide us with the engineers github username?",
         validate: (nameInput) => {
-          if (nameInput.trim() !== "" && !isNaN(nameInput)) {
+          if (nameInput) {
             return true;
           } else {
-            console.log("Please enter a valid Github username!");
+            // ! had to do console.log due that alert.console.log was not working as intended and it didn't provide me with a message.
+            console.log("Please enter the team Managers name!");
             return false;
           }
         },
@@ -210,13 +210,13 @@ const createIntern = () => {
       {
         type: "input",
         name: "School",
-        message: "Provide us with the school for the intern",
-        // ! modify validations to require number
+        message: "Provide us with the intern school's name?",
         validate: (nameInput) => {
-          if (nameInput.trim() !== "" && !isNaN(nameInput)) {
+          if (nameInput) {
             return true;
           } else {
-            console.log("Please enter a valid school!");
+            // ! had to do console.log due that alert.console.log was not working as intended and it didn't provide me with a message.
+            console.log("Please enter the schools name!");
             return false;
           }
         },
