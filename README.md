@@ -3,7 +3,7 @@
 ## Table of Content
 
 * [Introduction](#introduction)
-* [Feature s](#features)
+* [Features](#features)
 * [Requirements](#requirements)
 * [Installation](#installation)
 * [Configuration](#configuration)
@@ -37,17 +37,15 @@ the requirements to run this webpage are really low due that we are only using *
 
 ## Installation
 
-To install this project please proceed to my [GitHub Repository](https://github.com/EspinosaSalvador/weather-api-Salvador)
-
-here is the webpage in [Github-Pages](https://espinosasalvador.github.io/weather-api-Salvador/)
+To install this project please proceed to my [GitHub Repository](https://github.com/EspinosaSalvador/Salvador-Team-profile-generator)
 
 you should be able to see this,
 
-![Github Repository](./assets/img/githubRepository.png)
+![Github Repository](./public/img/github-repository.png)
 
 Click on code as shown in the image
 
-![Click on Code](./assets/img/sshkey.png)
+![Click on Code](./public/img/ssh-key.png)
 
 Copy the SSH key or the HTTPS key and open.
 
@@ -58,11 +56,15 @@ Copy the SSH key or the HTTPS key and open.
 either one of this will work. please proceed to the terminal an put in your Terminal,
 
 ```
-git clone git@github.com:EspinosaSalvador/weather-api-Salvador.git
+git clone git@github.com:EspinosaSalvador/Salvador-Team-profile-generator.git
 ```
 
 and now you have a copy of the code.
 
+here is a small video I recorded showing the webpage running and using it from my end.
+
+
+[Castify video showing how to input prompts in the command line]()
 ## Configuration
 
 If you want to do any configurations on this project please open a new branch you can do this by putting the following code in your terminal,
@@ -77,32 +79,34 @@ switch branches putting the following code on your terminal.
 git checkout ＜branchname＞
 ```
 
-If you want to show us your code and merge please open a pull request on [Github](https://github.com/EspinosaSalvador/weather-api-Salvador/pulls).
+If you want to show us your code and merge please open a pull request on 
 
-![Pull request](./assets/img/pullrequest.png)
+[Github](https://github.com/EspinosaSalvador/Salvador-Team-profile-generator/pulls).
+
+![Pull request](./public/img/pull-request.png)
 
 ## What you should be able to see
 
-These is what you should be able to see in the Webpage,
-![Webpage](./assets/img/entering%20the%20page.png)
+These is what you should be able to see in the Webpage, after using the terminal for using the Manager, Engineer, Intern.
+![Webpage](./public/img/page-running.png)
 
-Please proceed to text your city that you want to see the weather on. this will be on the top of the page. for this example I am going to use my hometown "Monterrey, MX"
+now I am going to show you each picture in order, as for this example we have, Manager, Engineer and Intern. the order depends on the that the user chooses to. 
 
-![Search](./assets/img/Monterrey.png)
+![Manager](./public/img/manager-pic.png)
 
-you will see the information for the destination for the current time and the next five days with temperature, windspeed and humidity.
+Now Engineer.
 
-Lets try another city
+![Engineer](./public/img/engineer-pic.png)
 
-![Cancun](./assets/img/Cancun.png)
+and now the intern.
 
-in cancun we have now new information but the important part is to see that we have everything saved on the search area that is above the current weather.
-
-![New York](./assets/img/new%20York.png)
+![Intern](./public/img/intern-pic.png)
 
 ## Troubleshooting
 
-The Weather app is in version 1.0 ,please let me know if there are anybug in the webpage by issuing it in [Github](https://github.com/EspinosaSalvador/weather-api-Salvador/issues)
+The Weather app is in version 1.0 ,please let me know if there are anybug in the webpage by issuing it in [Github](https://github.com/EspinosaSalvador/Salvador-Team-profile-generator/issues)
+
+![Issues-webpage](./public/img/issues.png)
 
 ## Next Phase Development
 
