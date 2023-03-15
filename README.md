@@ -104,7 +104,7 @@ and now the intern.
 
 ## Troubleshooting
 
-The Weather app is in version 1.0 ,please let me know if there are anybug in the webpage by issuing it in [Github](https://github.com/EspinosaSalvador/Salvador-Team-profile-generator/issues)
+The team-profile-generator is in version 1.0 ,please let me know if there are anybug in the webpage by issuing it in [Github](https://github.com/EspinosaSalvador/Salvador-Team-profile-generator/issues)
 
 ![Issues-webpage](./public/img/issues.png)
 
