@@ -64,7 +64,8 @@ and now you have a copy of the code.
 here is a small video I recorded showing the webpage running and using it from my end.
 
 
-[Castify video showing how to input prompts in the command line]()
+[![Watch the video](./public/img/Video.png)](https://drive.google.com/file/d/1dUe_RgVzD6j6ttdZ0Se2Fs5_mRyoInRt/preview)
+
 ## Configuration
 
 If you want to do any configurations on this project please open a new branch you can do this by putting the following code in your terminal,
